@@ -132,35 +132,88 @@ saveBtn5.on('click', save5);
 
 // time color change
 
-// function timeChanger() {
-// 	moment();
-// 	if (today > today.set('hour', 09)) {
-// 		txtArea9.css('background-color', 'gray');
-// 	}
-// 	if (today > today.hour(10)) {
-// 		txtArea10.css('background-color', 'gray');
-// 	}
-// 	if (today > 11) {
-// 		txtArea11.css('background-color', 'gray');
-// 	}
-// 	if (today > 12) {
-// 		txtArea12.css('background-color', 'gray');
-// 	}
-// 	if (today > 13) {
-// 		txtArea1.css('background-color', 'gray');
-// 	}
-// 	if (today > 14) {
-// 		txtArea2.css('background-color', 'gray');
-// 	}
-// 	if (today > 15) {
-// 		txtArea3.css('background-color', 'gray');
-// 	}
-// 	if (today > 16) {
-// 		txtArea4.css('background-color', 'gray');
-// 	}
-// 	if (today > 17) {
-// 		txtArea5.css('background-color', 'gray');
-// 	}
-// 	console.log(moment().set('hour', 9));
-// }
-// timeChanger();
+function timeChanger() {
+	moment();
+	if (today > moment(9, 'HH')) {
+		txtArea9.css('background-color', 'gray');
+	}
+	if (today == moment(9, 'HH')) {
+		txtArea9.css('background-color', 'red');
+	}
+	if (today < moment(9, 'HH')) {
+		txtArea9.css('background-color', 'green');
+	}
+	if (today > moment(10, 'HH')) {
+		txtArea10.css('background-color', 'gray');
+	}
+	if (today == moment(10, 'HH')) {
+		txtArea10.css('background-color', 'red');
+	}
+	if (today < moment(10, 'HH')) {
+		txtArea10.css('background-color', 'green');
+	}
+	if (today > moment(11, 'HH')) {
+		txtArea11.css('background-color', 'gray');
+	}
+	if (today == moment(11, 'HH')) {
+		txtArea11.css('background-color', 'red');
+	}
+	if (today < moment(11, 'HH')) {
+		txtArea11.css('background-color', 'green');
+	}
+	if (today > moment(12, 'HH')) {
+		txtArea12.css('background-color', 'gray');
+	}
+	if (today == moment(12, 'HH')) {
+		txtArea12.css('background-color', 'red');
+	}
+	if (today < moment(12, 'HH')) {
+		txtArea12.css('background-color', 'green');
+	}
+	if (today > moment(13, 'HH')) {
+		txtArea1.css('background-color', 'gray');
+	}
+	if (today == moment(13, 'HH')) {
+		txtArea1.css('background-color', 'red');
+	}
+	if (today < moment(13, 'HH')) {
+		txtArea1.css('background-color', 'green');
+	}
+	if (today > moment(14, 'HH')) {
+		txtArea2.css('background-color', 'gray');
+	}
+	if (today == moment(14, 'HH')) {
+		txtArea2.css('background-color', 'red');
+	}
+	if (today < moment(14, 'HH')) {
+		txtArea2.css('background-color', 'green');
+	}
+	if (today > moment(15, 'HH')) {
+		txtArea3.css('background-color', 'gray');
+	}
+	if (today == moment(15, 'HH')) {
+		txtArea3.css('background-color', 'red');
+	}
+	if (today < moment(15, 'HH')) {
+		txtArea3.css('background-color', 'green');
+	}
+	if (today > moment(16, 'HH')) {
+		txtArea4.css('background-color', 'gray');
+	}
+	if (today == moment(16, 'HH')) {
+		txtArea4.css('background-color', 'red');
+	}
+	if (today < moment(16, 'HH')) {
+		txtArea4.css('background-color', 'green');
+	}
+	if (today > moment(17, 'HH')) {
+		txtArea5.css('background-color', 'gray');
+	}
+	if (today == moment(17, 'HH')) {
+		txtArea5.css('background-color', 'red');
+	}
+	if (today < moment(17, 'HH')) {
+		txtArea5.css('background-color', 'green');
+	}
+}
+timeChanger();
